@@ -8,9 +8,6 @@
 /* Stop purging. */
 
 /* Write your own custom component styles here */
-.btn-blue {
-  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
-}
 
 /* Start purging... */
 @tailwind utilities;
@@ -21,17 +18,22 @@
   background-color: white;
 } */
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
     background-color: rgb(78, 3, 59);
+    background-color: black;
   }
   h1, h2, h3, h4, h5, h6, p {
     filter: invert(1);
   }
-}
+} */
 
 .blur {
   backdrop-filter: blur(2px);
+}
+
+.deblur {
+  backdrop-filter: blur(0px);
 }
 
 /* .video-container video {
@@ -40,3 +42,10 @@
   -webkit-clip-path: url(#clip-00);
           clip-path: url(#clip-00);
 } */
+
+@supports (-webkit-text-stroke: 1px black) {
+  .outline-text {
+    -webkit-text-stroke: 1px white;
+    -webkit-text-fill-color: black;
+  }
+}
