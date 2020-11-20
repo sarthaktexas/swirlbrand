@@ -1,0 +1,42 @@
+@tailwind base;
+
+/* Write your own custom base styles here */
+@import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Oswald:wght@200;700&family=Spectral:ital,wght@0,700;0,800;1,700;1,800&family=Varela+Round&display=swap');
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write your own custom component styles here */
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+body {
+  background-color: palevioletred;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(78, 3, 59);
+  }
+  h1, h2, h3, h4, h5, h6, p {
+    filter: invert(1);
+  }
+}
+
+.blur {
+  backdrop-filter: blur(2px);
+}
+
+/* .video-container video {
+  width: 100%;
+  display: block;
+  -webkit-clip-path: url(#clip-00);
+          clip-path: url(#clip-00);
+} */
