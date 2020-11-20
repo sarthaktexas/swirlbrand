@@ -17,9 +17,9 @@
 /* Stop purging. */
 
 /* Your own custom utilities */
-body {
-  background-color: palevioletred;
-}
+/* body {
+  background-color: white;
+} */
 
 @media (prefers-color-scheme: dark) {
   body {
