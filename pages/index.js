@@ -1,9 +1,13 @@
+import Head from 'next/head'
 import Nav from '../components/nav'
 import Link from 'next/link'
 
 export default function IndexPage() {
   return (
     <div>
+      <Head>
+        <script async defer data-website-id="bb8c0f29-bac3-4894-be39-e025a429ac79" src="https://analytics.sarthakmohanty.me/umami.js"></script>
+      </Head>
       <img
         src="/checkerboard-graphic.png"
         alt="Black and White Checkerboard"
