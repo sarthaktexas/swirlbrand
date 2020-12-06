@@ -1,6 +1,13 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+@font-face {
+  font-family: 'Mytupi';
+  src: url('/mytupibold-webfont.woff2') format('woff2'),
+       url('/mytupibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 @import url('https://fonts.googleapis.com/css2?family=Corben:wght@400;700&family=Oswald:wght@200;700&family=Spectral:ital,wght@0,700;0,800;1,700;1,800&family=Varela+Round&display=swap');
 
 /* Start purging... */

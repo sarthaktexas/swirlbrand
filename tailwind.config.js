@@ -1,9 +1,7 @@
 module.exports = {
-  future: {
-    removeDeprecatedGapUtilities: true,
-    purgeLayersByDefault: true,
-  },
-  purge: ['./components/**/*.{js,ts,jsx,tsx}', './pages/**/*.{js,ts,jsx,tsx}'],
+  purge: [],
+  presets: [],
+  darkMode: 'media',
   theme: {
     extend: {
       colors: {
@@ -19,6 +17,7 @@ module.exports = {
         'oswald': 'Oswald, sans-serif',
         'spectral': 'Spectral, serif',
         'varela': 'Varela Round, sans-serif',
+        'mytupi': 'Mytupi, sans-serif',
       },
     },
   },
